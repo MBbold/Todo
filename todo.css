@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: linear-gradient(100deg, rgb(0, 255, 157), rgb(4, 101, 245));
+    min-height: 100vh;
+    color: white;
+    font-family: "Poppins", sans-serif;
+}
+header{
+    font-size: 1.5rem;
+}
+header, main{
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main input, main button{
+    background-color: white;
+    border: none;
+    font-size: 2rem;
+    padding: 0.4rem;
+    /* border-radius: ; */
+}
+main button{
+    background-color: rgb(255, 255, 255);
+    color: bisque;
+    cursor: pointer;
+
+}
+main button:hover{
+    background-color: bisque;
+    color: white;
+}
+.todo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-width: 30%;
+}
+.listBox {
+    margin: 0.5rem;
+    background: white;
+    color: black;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.5s ease;
+  }
+  .listText {
+      color: black;
+    display: flex;
+    align-items: center;
+    background-color: aliceblue;
+    height: 25px;
+    width: 330px;
+    padding-left: 8px;
+    cursor: pointer;
+  }
+  .trash-btn,
+  .complete-btn {
+    background: #ff6f47;
+    color: white;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  .complete-btn {
+    background: green;
+  }

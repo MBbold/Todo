@@ -21,7 +21,7 @@ function addTodo() {
 
     // console.log(todos);
   }
-  todoButton.addEventListener("click", addTodo);
+//   todoButton.addEventListener("click", addTodo);
 
   document.getElementById("add").addEventListener("click", function () {
     addTodo();
@@ -38,11 +38,14 @@ function addTodo() {
               <div class="listText">${item.title}</div>
               <button class="trash-btn" ><i class="fas fa-check"></i></button>
               <button class="complete-btn" ><i class="fas fa-trash"></i></button>
-              
-              
-              <i id="delete" onclick="deleteItem(this)" class="fa-solid fa-circle-xmark"></i>
           </div>
       `;
       todoContainer.innerHTML += list;
     });
+  }
+  function deleteCheck(e){
+    const item = e.target;
+      if(item.classlist[0]==="trash-btn"){
+
+      }
   }
